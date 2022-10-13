@@ -1,18 +1,7 @@
 {
-  "env": {
-    "browser": true,
-    "es2021": true,
-    "jest": true
-  },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier"
-  ],
   "semi": true,
   "tabWidth": 2,
-  "printWidth": 60,
+  "printWidth": 80,
   "singleQuote": true,
   "trailingComma": "all",
   "jsxSingleQuote": true,

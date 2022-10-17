@@ -3,15 +3,21 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { Provider } from 'react-redux';
 import store from './store';
+import ThemeProvider from 'react-bootstrap/ThemeProvider';
 
 const rootElement = document.getElementById('root');
 const renderApp = (Component: () => JSX.Element) => {
   ReactDOM.render(
-    <Provider store={store}>
-      <React.StrictMode>
-        <Component />
-      </React.StrictMode>
-    </Provider>,
+    <ThemeProvider
+      breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
+      minBreakpoint='xxs'
+    >
+      <Provider store={store}>
+        <React.StrictMode>
+          <Component />
+        </React.StrictMode>
+      </Provider>
+    </ThemeProvider>,
     rootElement,
   );
 };

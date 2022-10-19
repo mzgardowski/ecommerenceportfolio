@@ -3,6 +3,10 @@ import Navigation from 'src/Components/Layout/Header/Navigation';
 import './Header.scss';
 
 const Header = () => {
+  {
+    /* TODO take out login form and navigation link to header component and create utils to handle this */
+  }
+
   return (
     <header>
       <nav className='row bg-light app-header'>

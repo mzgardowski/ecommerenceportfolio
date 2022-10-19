@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { Provider } from 'react-redux';
 import store from './store';
-
 import ThemeProvider from 'react-bootstrap/ThemeProvider';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 const rootElement = document.getElementById('root');
 const renderApp = (Component: () => JSX.Element) => {

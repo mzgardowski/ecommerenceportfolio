@@ -1,0 +1,22 @@
+.app-header {
+  ul {
+    list-style: none;
+    li {
+      text-align: center;
+      padding: 12px;
+      a {
+        font-size: 18px;
+        padding: 12px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        text-justify: center;
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

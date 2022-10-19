@@ -1,12 +1,7 @@
-import Footer from 'src/Layout/Footer/Footer';
-import Header from 'src/Layout/Header/Header';
-
 const HomePage = () => {
   return (
     <div>
-      <Header />
-      <main></main>
-      <Footer />
+      <h1>HomePage</h1>
     </div>
   );
 };

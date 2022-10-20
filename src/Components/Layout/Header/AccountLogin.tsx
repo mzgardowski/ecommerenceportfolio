@@ -11,7 +11,12 @@ const AccountLogin = () => {
   return (
     <>
       <div className='col-3 justify-content-end'>
-        <Person onClick={() => onToggleAccount()} size={30} className='m-2' />
+        <Person
+          cursor='pointer'
+          onClick={() => onToggleAccount()}
+          size={30}
+          className='m-2'
+        />
         {account && (
           <div className='position-fixed bg-light col-12'>
             <h3>asd</h3>

@@ -1,16 +1,21 @@
+import AccountLogin from 'src/Components/Layout/Header/AccountLogin';
 import Navigation from 'src/Components/Layout/Header/Navigation';
 import './Header.scss';
 
 const Header = () => {
+  {
+    /* TODO take out login form and navigation link to header component and create utils to handle this */
+  }
+
   return (
-    <header className='row bg-light app-header'>
-      <Navigation />
-      <div className='col-6'>
-        <h4 className='text-center mt-3'>Clothes Shop</h4>
-      </div>
-      <div className='col-3'>
-        <i className='bi-alarm' color='black'></i>
-      </div>
+    <header>
+      <nav className='row bg-light app-header'>
+        <Navigation />
+        <div className='col-6'>
+          <h4 className='text-center mt-2'>Clothes Shop</h4>
+        </div>
+        <AccountLogin />
+      </nav>
     </header>
   );
 };

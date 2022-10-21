@@ -1,27 +1,24 @@
 import { useState } from 'react';
 import { Person } from 'react-bootstrap-icons';
+import useHeader from './utils/useHeader';
 
-const AccountLogin = () => {
-  const [account, setAccount] = useState<boolean>(false);
-
-  const onToggleAccount = () => {
-    setAccount((prev) => !prev);
-  };
-
+const AccountLogin = ({
+  openAccount,
+  onAccountHandler,
+}: {
+  openAccount: boolean;
+  onAccountHandler: () => void;
+}) => {
+  console.log(openAccount);
   return (
     <>
-      <div className='col-3 justify-content-end'>
+      <div className='d-flex col-3 justify-content-end'>
         <Person
           cursor='pointer'
-          onClick={() => onToggleAccount()}
+          onClick={() => onAccountHandler()}
           size={30}
           className='m-2'
         />
-        {account && (
-          <div className='position-fixed bg-light col-12'>
-            <h3>asd</h3>
-          </div>
-        )}
       </div>
     </>
   );

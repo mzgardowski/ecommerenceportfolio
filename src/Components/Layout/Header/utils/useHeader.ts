@@ -1,22 +1,22 @@
 import { useState } from 'react';
 const useHeader = () => {
-  const [openAccount, setOpenAccount] = useState<boolean>(false);
+  const [openLoginModal, setOpenLoginModal] = useState<boolean>(false);
   const [openLinks, setOpenLinks] = useState<boolean>(false);
 
-  const onAccountHandler = () => {
-    setOpenAccount((prev) => !prev);
+  const onLoginModalHandler = () => {
+    setOpenLoginModal((prev) => !prev);
     setOpenLinks(false);
   };
 
   const onLinksHandler = () => {
     setOpenLinks((prev) => !prev);
-    setOpenAccount(false);
+    setOpenLoginModal(false);
   };
 
   return {
-    openAccount,
+    openLoginModal,
     openLinks,
-    onAccountHandler,
+    onLoginModalHandler,
     onLinksHandler,
   };
 };

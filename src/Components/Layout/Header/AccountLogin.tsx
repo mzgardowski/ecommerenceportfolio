@@ -3,19 +3,18 @@ import { Person } from 'react-bootstrap-icons';
 import useHeader from './utils/useHeader';
 
 const AccountLogin = ({
-  openAccount,
-  onAccountHandler,
+  openLoginModal,
+  onLoginModalHandler,
 }: {
-  openAccount: boolean;
-  onAccountHandler: () => void;
+  openLoginModal: boolean;
+  onLoginModalHandler: () => void;
 }) => {
-  console.log(openAccount);
   return (
     <>
       <div className='d-flex col-3 justify-content-end'>
         <Person
           cursor='pointer'
-          onClick={() => onAccountHandler()}
+          onClick={() => onLoginModalHandler()}
           size={30}
           className='m-2'
         />

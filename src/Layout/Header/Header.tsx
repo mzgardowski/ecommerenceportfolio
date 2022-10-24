@@ -9,8 +9,8 @@ const Header = () => {
     useHeader();
   return (
     <>
-      <header>
-        <nav className='row bg-light app-header'>
+      <header className='app-header'>
+        <nav className='row bg-light app-nav-header'>
           <Navigation openLinks={openLinks} onLinksHandler={onLinksHandler} />
           <div className='col-6'>
             <h4 className='text-center mt-2'>DEVRESER</h4>

@@ -1,0 +1,40 @@
+.loginRegisterForm {
+  div {
+    box-sizing: border-box;
+    margin: 1rem;
+    input {
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 2px solid rgb(116, 116, 116);
+      padding: 6px;
+      width: 100%;
+      &:focus {
+        box-sizing: border-box;
+        outline: none;
+        border-bottom: 2px solid rgb(59, 59, 59);
+        border-left: 6px solid rgb(59, 59, 59);
+      }
+    }
+  }
+}
+.loginOrRegister {
+  margin-top: 2rem;
+  p {
+    font-size: 12px;
+    text-align: center;
+  }
+  button {
+    margin: 0 auto;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    &:hover {
+      border-bottom: 1px solid rgb(72, 72, 72);
+    }
+    &:active {
+      background-color: rgb(235, 235, 235);
+    }
+  }
+}

@@ -1,22 +1,31 @@
 import AccountLogin from 'src/Components/Layout/Header/AccountLogin';
 import Navigation from 'src/Components/Layout/Header/Navigation';
+import useHeader from 'src/Components/Layout/Header/utils/useHeader';
+import LoginModal from 'src/Components/LoginModal/LoginModal';
 import './Header.scss';
 
 const Header = () => {
-  {
-    /* TODO take out login form and navigation link to header component and create utils to handle this */
-  }
-
+  const { openLinks, onLinksHandler, openLoginModal, onLoginModalHandler } =
+    useHeader();
   return (
-    <header>
-      <nav className='row bg-light app-header'>
-        <Navigation />
-        <div className='col-6'>
-          <h4 className='text-center mt-2'>Clothes Shop</h4>
-        </div>
-        <AccountLogin />
-      </nav>
-    </header>
+    <>
+      <header>
+        <nav className='row bg-light app-header'>
+          <Navigation openLinks={openLinks} onLinksHandler={onLinksHandler} />
+          <div className='col-6'>
+            <h4 className='text-center mt-2'>DEVRESER</h4>
+          </div>
+          <AccountLogin
+            openLoginModal={openLoginModal}
+            onLoginModalHandler={onLoginModalHandler}
+          />
+        </nav>
+      </header>
+      <LoginModal
+        showModal={openLoginModal}
+        toggleShowModal={onLoginModalHandler}
+      />
+    </>
   );
 };
 

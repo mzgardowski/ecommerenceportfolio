@@ -38,7 +38,9 @@
     "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",
     "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx,json}'",
     "lint-staged": "lint-staged --config lint-staged.js",
-    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "check-types": "tsc --pretty --noEmit",
+    "check-format": "prettier --check ."
   },
   "husky": {
     "pre-commit": "lint-staged"

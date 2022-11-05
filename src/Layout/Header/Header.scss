@@ -1,0 +1,29 @@
+.app-header {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.app-nav-header {
+  ul {
+    list-style: none;
+    li {
+      text-align: center;
+      padding: 12px;
+      a {
+        font-size: 18px;
+        padding: 12px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        text-justify: center;
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
